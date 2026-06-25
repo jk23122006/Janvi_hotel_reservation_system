@@ -1,3 +1,4 @@
+--Creating database and tables
 
 
 CREATE DATABASE janvi_hotel_reservation;
@@ -18,7 +19,7 @@ CREATE TABLE rooms (
     room_no INT,
     room_type VARCHAR(50),
     price_per_night DECIMAL(10,2),
-    status VARCHAR(20)
+    room_status VARCHAR(20)
 );
 
 

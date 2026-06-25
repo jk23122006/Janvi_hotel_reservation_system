@@ -2,7 +2,7 @@
 
 USE janvi_hotel_reservation;
 
-
+-- Basic SELECT queries
 SELECT * FROM guests;
 
 SELECT * FROM rooms;
@@ -13,6 +13,8 @@ SELECT * FROM bookings;
 
 SELECT * FROM payments;
 
+
+-- JOIN queries
 SELECT
     bookings.booking_id,
     guests.first_name,
@@ -64,6 +66,7 @@ SELECT
 FROM bookings
 GROUP BY booking_status;
 
+
 SELECT
     payment_id,
     booking_id,
@@ -73,7 +76,7 @@ SELECT
 FROM payments
 WHERE payment_status = 'Partially Paid';
 
-
+--Update and delete operations 
 UPDATE rooms
 SET room_status = 'Occupied'
 WHERE room_no = '104';
@@ -82,6 +85,6 @@ SELECT * FROM rooms WHERE room_no = '104';
 
 
 DELETE FROM staff
-WHERE first_name = 'Matt' AND last_name = 'Donovan';
+WHERE first_name = 'Matt' AND last_name = 'Donavan';
 
 SELECT * FROM staff;

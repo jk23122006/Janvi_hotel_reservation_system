@@ -1,3 +1,6 @@
+-- Insert sample data into all tables
+
+
 INSERT INTO guests(first_name, last_name, email_id, phone_number)
 VALUES
 ('Klaus','Mikealson','klaus00@gmail.com','0123456789'),
